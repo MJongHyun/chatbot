@@ -5,26 +5,26 @@ import plotly.graph_objects as go
 import ast
 from collections import Counter
 import matplotlib.pyplot as plt
-import matplotlib.font_manager as fm
-font_path = 'C:\\Windows\\Fonts\\gulim.ttc'
-font = fm.FontProperties(fname=font_path).get_name()
-plt.rc('font', family=font)
+# import matplotlib.font_manager as fm
+# font_path = 'C:\\Windows\\Fonts\\gulim.ttc'
+# font = fm.FontProperties(fname=font_path).get_name()
+# plt.rc('font', family=font)
 
-try:
-    script_path = os.path.dirname(os.path.abspath(__file__))
-    font_path = os.path.join(script_path, "fonts", "malgun.ttf") # 'malgun.ttf'는 실제 폰트 파일명으로 변경
+# try:
+#     script_path = os.path.dirname(os.path.abspath(__file__))
+#     font_path = os.path.join(script_path, "fonts", "malgun.ttf") # 'malgun.ttf'는 실제 폰트 파일명으로 변경
 
-    # 2. Matplotlib에 폰트 경로 지정 및 적용
-    font_prop = fm.FontProperties(fname=font_path)
-    plt.rc('font', family=font_prop.get_name())
-    plt.rc('axes', unicode_minus=False) # 마이너스 기호 깨짐 방지
+#     # 2. Matplotlib에 폰트 경로 지정 및 적용
+#     font_prop = fm.FontProperties(fname=font_path)
+#     plt.rc('font', family=font_prop.get_name())
+#     plt.rc('axes', unicode_minus=False) # 마이너스 기호 깨짐 방지
 
-    st.success(f"폰트를 성공적으로 불러왔습니다: {font_path}")
+#     st.success(f"폰트를 성공적으로 불러왔습니다: {font_path}")
 
-except FileNotFoundError:
-    st.error(f"폰트 파일을 찾을 수 없습니다. '{font_path}' 경로를 확인해주세요.")
-    st.info("프로젝트 폴더에 'fonts' 폴더를 만들고 그 안에 .ttf 폰트 파일을 넣었는지, 파일 이름이 정확한지 확인하세요.")
-    st.stop() # 폰트가 없으면 앱 실행 중지
+# except FileNotFoundError:
+#     st.error(f"폰트 파일을 찾을 수 없습니다. '{font_path}' 경로를 확인해주세요.")
+#     st.info("프로젝트 폴더에 'fonts' 폴더를 만들고 그 안에 .ttf 폰트 파일을 넣었는지, 파일 이름이 정확한지 확인하세요.")
+#     st.stop() # 폰트가 없으면 앱 실행 중지
 
 # --- 1. 앱 설정 ---
 
