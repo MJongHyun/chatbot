@@ -7,3 +7,4 @@ pandas==2.3.0
 plotly==5.22.0
 sentence_transformers==4.1.0
 streamlit==1.41.1
+openpyxl
