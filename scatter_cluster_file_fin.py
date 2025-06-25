@@ -111,10 +111,10 @@ st.sidebar.title("📄 파일 업로드")
 # qdf_file = st.sidebar.file_uploader("3. 질문 클러스터 분석 파일", type=['xlsx', 'csv', 'parquet'])
 # keyword_file = st.sidebar.file_uploader("4. 키워드 분석 파일", type=['xlsx', 'csv', 'parquet'])
 
-cbot_answer_file = './c_bot_code_fin.parquet'
-c_df_file =  './c_df_all.parquet'
-qdf_file = r'C:\Users\MJH\Downloads\chatbot\chatbot_v2_test\llm_check_plus_rag\c_bot_test_cluster_res_0625.xlsx'
-keyword_file = r'C:\Users\MJH\Downloads\chatbot\chatbot_v2_test\llm_check_plus_rag\c_bot_keyword_check_0625.xlsx'
+cbot_answer_file = './data/c_bot_code_fin.parquet'
+c_df_file =  './data/c_df_all.parquet'
+qdf_file = './data/c_bot_test_cluster_res_0625.xlsx'
+keyword_file = './data/c_bot_keyword_check_0625.xlsx'
 
 # 헬퍼 함수: 파일 확장자에 따라 데이터프레임 로드
 def load_dataframe(file_object):
