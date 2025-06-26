@@ -7,7 +7,7 @@ from collections import Counter
 import matplotlib.pyplot as plt
 
 
---- 1. 앱 설정 ---
+# --- 1. 앱 설정 ---
 st.set_page_config(layout="wide")
 st.title("문서 기반 챗봇 답변 분석 대시보드")
 
