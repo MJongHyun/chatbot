@@ -106,10 +106,10 @@ def interactive_scatter_plot(plot_df, service_name, llm_judge_score_threshold, r
 # --- 3. 데이터 로드 ---
 # 파일 경로 (사용자 환경에 맞게 수정 필요)
 try:
-    cbot_answer_file = './c_bot_code_fin.parquet'
-    c_df_file = './c_df_all.parquet'
-    qdf_file = r'C:\Users\MJH\Downloads\chatbot\chatbot_v2_test\llm_check_plus_rag\c_bot_test_cluster_res_0625.xlsx'
-    keyword_file = r'C:\Users\MJH\Downloads\chatbot\chatbot_v2_test\llm_check_plus_rag\c_bot_keyword_check_0625.xlsx'
+    cbot_answer_file = './data/c_bot_code_fin.parquet'
+    c_df_file = './data/c_df_all.parquet'
+    qdf_file = './data/c_bot_test_cluster_res_0625.xlsx'
+    keyword_file = './data/c_bot_keyword_check_0625.xlsx'
 
     cbot_answer_df = pd.read_parquet(cbot_answer_file).rename(columns={'document_name': 'TypeName'})[['TypeName', 'document_data']]
     c_df = pd.read_parquet(c_df_file)
